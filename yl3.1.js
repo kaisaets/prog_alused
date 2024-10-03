@@ -4,8 +4,11 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 rl.question('Mitu korda äratada?', aratamisKordus =>{
-    for (let kord = 1; kord <= aratamisKordus; kord++){
-        console.log('Tõuse ja sära')
-    } 
+    let kord = 1
+    while (kord <= aratamisKordus) {
+    console.log('Tõuse ja sära')
+    kord++
+    }
+     
     rl.close()
 })
